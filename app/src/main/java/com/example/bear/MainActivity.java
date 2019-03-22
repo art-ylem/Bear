@@ -8,7 +8,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
     private Button brown;
     private Button white;
-    String picture;
+    int picture;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,11 +23,11 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 switch(v.getId()){
                     case R.id.bear:
-                        picture = "brown_bear";
+                        picture = R.drawable.brown;
                         Picture.launchActivity(MainActivity.this, picture);
                         break;
                     case R.id.whiteBear:
-                        picture = "white_bear";
+                        picture = R.drawable.white;
                         Picture.launchActivity(MainActivity.this, picture);
                         break;
                 }
