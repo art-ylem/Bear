@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         brown = findViewById(R.id.bear);
         white = findViewById(R.id.whiteBear);
 
-        View.OnClickListener onClickListener = new View.OnClickListener() {
+        View.OnClickListener onClickListener  = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 switch(v.getId()){
@@ -30,9 +30,10 @@ public class MainActivity extends AppCompatActivity {
                         picture = R.drawable.white;
                         Picture.launchActivity(MainActivity.this, picture);
                         break;
-                }
+                };
             }
         };
+
 
         brown.setOnClickListener(onClickListener);
         white.setOnClickListener(onClickListener);
