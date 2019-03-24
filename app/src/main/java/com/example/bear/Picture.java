@@ -42,6 +42,7 @@ public class Picture extends AppCompatActivity {
         imageView.setImageResource(i);
 //        как вставить imageView из класса
 
+// насчет такой проверки я не уверен, но на стеке вроде есть такой вариант
         if(imageView.getResources().equals(R.drawable.brown)){
             bearResource = "Brown";
         } else if (imageView.getResources().equals(R.drawable.white)){
